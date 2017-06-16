@@ -59,40 +59,8 @@
   </section>
 
   <section class="slide" id="youtube">
-    <h2>Experimenteer via YouTube-clips</h2>
-    <div id="player"></div>
-    <script>
-      var player;
-      function onYouTubeIframeAPIReady() {
-        player = new YT.Player('player', {
-          height: '450',
-          width: '800',
-          playerVars: {
-            autoplay: 0,
-            loop: 0,
-            controls: 0,
-            showinfo: 0,
-            autohide: 1,
-            start: 250,
-            end: 280,
-            modestbranding: 1,
-            vq: 'hd1080'},
-          videoId: '0Bt6RPP2ANI',
-          events: {
-            'onReady': onPlayerReady,
-            'onStateChange': onPlayerStateChange
-          }
-        });
-      }
-
-      function onPlayerReady(event) {
-        player.mute();
-      }
-
-      function onPlayerStateChange(event) {
-        player.mute();
-      }
-    </script>
+    <h2>Toon een specifiek YouTube-fragment</h2>
+    <iframe width="800" height="450" src="https://www.youtube.com/embed/C3WzPD2iMKc?start=475&amp;end=486&amp;rel=0&amp;showinfo=0&amp;autohide=1" allowfullscreen></iframe>
   </section>
 
   <section class="slide" id="Molecules">
